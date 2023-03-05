@@ -19,8 +19,12 @@
 <?php
 session_start();
 
-include("connection.php");
-include("functions.php");
+// Include the database connection file
+require_once 'connection.php';
+
+// Include the functions file
+require_once 'functions.php';
+
 
 $user_data = check_login($con);//connection abrreviated to con.
 
